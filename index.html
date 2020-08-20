@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Generateur de citations</title>
+  </head>
+  <body>
+    <h1>Generateur de citations</h1>
+    <p>Quel theme de citations voulez vous ?</p>
+    <br />
+    <input
+      type="radio"
+      name="themeQuote1"
+      value="themeQuote1"
+      id="themeQuote1"
+    />
+    <label for="themeQuote1">Insectes</label>
+    <br />
+    <input
+      type="radio"
+      name="themeQuote2"
+      value="themeQuote2"
+      id="themeQuote2"
+    />
+    <label for="themeQuote1">Animaux</label>
+    <br />
+    <p>
+      <label for="numberQuote"
+        >Combien de citations voulez vous generer ?</label
+      >
+      <br />
+      <select name="numberQuote" id="numberQuote">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </p>
+    <button onclick="quoteGenerator()">Générer</button>
+    <script src="index.js"></script>
+  </body>
+</html>
