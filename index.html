@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
     <title>Generateur de citations</title>
   </head>
   <body>
     <h1>Generateur de citations</h1>
-    <p>Quel theme de citations voulez vous ?</p>
+    <h2>Quel theme de citations voulez vous ?</h2>
     <br />
     <input
       type="radio"
-      name="themeQuote1"
-      value="themeQuote1"
-      id="themeQuote1"
+      name="themeQuoteType"
+      value="themeQuoteType1"
+      id="themeQuoteType1"
     />
-    <label for="themeQuote1">Insectes</label>
+    <label for="themeQuoteType">Insectes</label>
     <br />
     <input
       type="radio"
-      name="themeQuote2"
-      value="themeQuote2"
-      id="themeQuote2"
+      name="themeQuoteType"
+      value="themeQuoteType2"
+      id="themeQuoteType2"
     />
-    <label for="themeQuote1">Animaux</label>
+    <label for="themeQuoteType">Animaux</label>
     <br />
-    <p>
+    <h2>
       <label for="numberQuote"
         >Combien de citations voulez vous generer ?</label
       >
@@ -36,8 +38,9 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-    </p>
-    <button onclick="quoteGenerator()">Générer</button>
+    </h2>
+    <div id="quoteText"></div>
+    <button id="new_game" onclick="quoteGenerator()">Générer</button>
     <script src="index.js"></script>
   </body>
 </html>
